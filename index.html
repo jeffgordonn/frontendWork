@@ -2,27 +2,98 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, intial-scale=1">
-        <title>The big 3 of weightlifting</title>
-        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mock Gym Site</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
     </head>
     <body>
-        <h1>Weight Lifting: Core Three Lifts</h1>
-        <div class="container" id="coreLifts">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <section class="exerciseName">Bench Press</section>
-                    <span class="exerciseDescription">The bench press works the chest, triceps, and shoulders.</span>
+        <header>
+            <!--- Navbar Starts-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light gym-navbar">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><h2><i class="fas fa-dumbbell"></i> Top Performance</h2></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#gym-info">Gym Information</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#exercise-area-info">Exercise Area</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#trainer-info">Information on Fictional Trainers</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <section class="exerciseName">Squats</section>
-                    <span class="exerciseDescription">Squats can work various muscles in the legs. The width of the stance will determine to what degree what muscles take over, but the primary muscles are the quads, glutes, hamstrings, and lower back.</span>
+              </nav>
+              <!---Navbar ends -->
+        </header>
+        <!--main-content on Page-->
+        <div id="main-content" class="container">
+            <!-- Gym Information begins -->
+            <div id="gym-information" class="row mb-4 row-equal">
+                <!-- gym details -->
+                <div class="spacing col-lg-4 col-md-6 col-12">
+                    <section id="gym-details" class="information-block">
+                        <h3 id="gym-info" class="info-title">Gym Information:</h3>
+                        <p>GymMockUp Location: 111 Hypothetical Drive Neverland, Antarctica</p>
+                        <p>GymMockUp Phone Number: <span class="phone-number">(000)-000-0000</span></p>
+                        <img src="Images/kyriakos_grizzly.jpg" alt="physical-perfection" >
+                    </section>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <section class="exerciseName">Conventional Deadlifts</section>
-                    <span class="exerciseDescription">Conventional deadlifts work essentially every muscle in your body. Their primary benefactors will be your posterior chain, hamstring and lower back.</span>
+                <!-- exercise area description -->
+                <div class="spacing col-lg-4 col-md-6 col-12">
+                    <section id="exercise-area-information" class="information-block">
+                        <h3 id="exercise-area-info" class="info-title">Exercise Area Description:</h3>
+                        This 100,000 SQFT Lifting Dreamland has every machine and workout equipment the industry has to offer. 10 power racks, 5 flat benches, 3 incline bench, and deadlift platforms make this viable for any highlevel weight lifter. And for the less experience, find guidance from our trainers with our free intial training consultation to help determine your needs.
+                        <img src="Images/gym-area-iron-addicts.jpg" alt="gym-area" id="gym-pic">
+                    </section>
+                </div>
+                <!-- trainer information -->
+                <br>
+                <div class="spacing col-lg-4 col-md-12 col-12">
+                    <section id="trainer-information" class="information-block">
+                        <h3 id="trainer-info" class="info-title">Trainer Credentials:</h3>
+                        <span class="trainer-name">Arnold Coleman <i class="fas fa-dumbbell"></i> :</span> A combined olympia record of 15 wins, this is the ultimate trainer for our bodybuilding clientele
+                        <ul>
+                            <li>15x Mr Olpymia of this Frankenstein Trainer</li>
+                            <li>YEAH BUDDY... let's get to the choppah</li>
+                            <li>Governor of California</li>
+                        </ul>
+                        <span class="trainer-name">Cus Tyson <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard2-pulse-fill" viewBox="0 0 16 16">
+                            <path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+                            <path d="M4.085 1H3.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1h-.585q.084.236.085.5V2a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 4 2v-.5q.001-.264.085-.5M9.98 5.356 11.372 10h.128a.5.5 0 0 1 0 1H11a.5.5 0 0 1-.479-.356l-.94-3.135-1.092 5.096a.5.5 0 0 1-.968.039L6.383 8.85l-.936 1.873A.5.5 0 0 1 5 11h-.5a.5.5 0 0 1 0-1h.191l1.362-2.724a.5.5 0 0 1 .926.08l.94 3.135 1.092-5.096a.5.5 0 0 1 .968-.039Z"/>
+                        </svg> :</span> An incredible combat sport teacher with both skill and experience.
+                        <ul>
+                            <li>The most vicious and brutal champion</li>
+                            <li>Has mastered fear</li>
+                            <li><span id="cus-fear">Has mastered fear</span></li>
+                        </ul>                        
+                        <span class="trainer-name">Ronda Adams <i class="fas fa-hand-rock"></i> :</span> An excellent trainer for Olympic lifts and functional activities
+                        <ul>
+                            <li>Shotput can reach the moon</li>
+                            <li>UFC Phenomom</li>
+                            <li>Partially Steven Adams sister</li>
+                        </ul>
+                    </section>
                 </div>
             </div>
+            <!-- Gym Infoformation ends -->
         </div>
+        <!-- main-content ends-->
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <!-- Popper.js -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>

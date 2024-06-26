@@ -1,0 +1,96 @@
+/** HEADER **/
+
+* {
+    font-weight: bold;
+}
+
+.gym-navbar {
+    background-color: goldenrod !important;
+    font-size: 1.17em;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.245);
+}
+
+/** END HEADER **/
+
+/** BODY **/
+
+
+#main-content {
+    font-size: .97em;
+    margin-top: 15px;
+}
+
+.spacing {
+    margin-top: 10px;
+}
+
+.information-block {
+    position: relative;
+    border: 1px solid black;
+    height: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#gym {
+    background-color: red;
+}
+
+span.phone-number {
+    font-style: italic;
+}
+
+span.trainer-name {
+    font-style: italic;
+    font-weight: bold;
+    padding: 3px;
+}
+
+
+.information-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#gym-pic {
+    height: 50%;
+}
+
+span#cus-fear {
+    font-style: italic;
+}
+
+section#gym-details {
+    background-color: rgb(218, 100, 100);
+}
+
+
+section#exercise-area-information {
+    background-color: rgb(152, 148, 148);
+}
+
+section#trainer-information {
+    background-color: goldenrod;
+}
+
+
+
+
+/* .row-equal {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-equal {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+} */
+
+
+/** END BODY **/
